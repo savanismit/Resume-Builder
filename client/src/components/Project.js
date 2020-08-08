@@ -16,11 +16,17 @@ class Project extends Component {
         const { values, handleChange } = this.props;
         return (
             <div className="card animated fadeInLeft">
-                <div className="card-body">
+                <div className="col-lg-12 mx-auto text-center mt-4">
+                    <h1><b>Tell us about your Personal and Group Projects</b></h1>
+                    <p className="lead">You should add all the important projects.</p>
+                <hr/>
+                </div>
+                
+                {/* <div className="card-body">
 
                     <h3 className="card-title">Projects' Info</h3>
                     <hr />
-                </div>
+                </div> */}
                 <form onSubmit={this.continue}>
 
                     

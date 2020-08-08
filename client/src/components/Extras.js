@@ -49,11 +49,17 @@ class Extras extends Component {
         const { values, handleChange } = this.props;
         return (
             <div className="card animated fadeInLeft">
-                <div className="card-body">
+                <div className="col-lg-12 mx-auto text-center mt-4">
+                    <h1><b>What skills do you want to highlight?</b></h1>
+                    <p className="lead">Highlight all the important skills you have.</p>
+                <hr/>
+                </div>
+
+                {/* <div className="card-body">
 
                     <h3 className="card-title">Miscellaneous</h3>
                     <hr />
-                </div>
+                </div> */}
                 <form onSubmit={this.formSubmit}>
                     <div className="row col-lg-10 mx-auto">
 

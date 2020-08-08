@@ -6,19 +6,23 @@ class PersonalDetails extends Component {
         e.preventDefault();
         this.props.nextStep();
     };
-
-    
-
-      
+ 
     render() {
         const { values, handleChange } = this.props;
         return (
             <div className="card animated fadeInLeft">
-                <div className="card-body">
+            <div className="col-lg-12 mx-auto text-center mt-4">
+                <h1><b>What’s the best way for employers to contact you?</b></h1>
+                <p className="lead">We suggest including an email and phone number.</p>
+                <hr/>
+            </div>
+            
+                {/* <div className="card-body">
 
                     <h3 className="card-title">Personal Info</h3>
                     <hr />
-                </div>
+                </div> */}
+
                 <form onSubmit={this.continue}>
                     <div className="row col-lg-10 mx-auto">
                         <div className="col-lg-4 text-left">

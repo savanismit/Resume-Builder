@@ -10,13 +10,11 @@ const app = express();
 
 const port = process.env.PORT || 5000;
 
-
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 // POST Route - PDF generation and fetching of the data
-
 app.post('/create-pdf', (req, res) => {
     pdf.create(pdfTemplate(req.body), {}).toFile('Resume.pdf', (err) => {
         if(err){

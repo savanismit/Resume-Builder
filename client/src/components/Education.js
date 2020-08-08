@@ -17,11 +17,16 @@ export default class Education extends Component {
         return (
 
             <div className="card animated fadeInLeft">
-                <div className="card-body">
+                <div className="col-lg-12 mx-auto text-center mt-4">
+                    <h1><b>Tell us about your education</b></h1>
+                    <p className="lead">Include every school, even if you're still there or didn't graduate.</p>
+                <hr/>
+                </div>
+                {/* <div className="card-body">
 
                     <h3 className="card-title">Education Info</h3>
                     <hr />
-                </div>
+                </div> */}
                 <form onSubmit={this.continue}>
 
                     

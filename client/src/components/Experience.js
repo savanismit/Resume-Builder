@@ -19,11 +19,17 @@ class Experience extends Component {
         const { values, handleChange } = this.props;
         return (
             <div className="card animated fadeInLeft">
-                <div className="card-body">
+                <div className="col-lg-12 mx-auto text-center mt-4">
+                    <h1><b>Tell us about your Work Experience</b></h1>
+                    <p className="lead">We’ll start there and work backward.</p>
+                <hr/>
+                </div>
+
+                {/* <div className="card-body">
 
                     <h3 className="card-title">Experience Info</h3>
                     <hr />
-                </div>
+                </div> */}
                 <form onSubmit={this.continue}>
                     
                     

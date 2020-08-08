@@ -31,6 +31,7 @@ module.exports = ({ name, email, phone, linkedin, github, skills, exp1_org, exp1
               }
               body{
                 font-family: 'Garamond';
+                font-size:25px;
               }
             </style>
         
@@ -50,6 +51,18 @@ module.exports = ({ name, email, phone, linkedin, github, skills, exp1_org, exp1
         </div>
       
         <hr/>
+        <div class="col-lg-8 mx-auto bg-light">
+              <h3><b>Education</b></h3>
+        </div>
+        <div class="col-lg-8 mx-auto">
+              <p class="lead"><b>${edu1_school}</b> (${edu1_qualification}, ${edu1_year})</p>
+              <p class="mt-0">${edu1_desc}</p>
+        </div>
+        <div class="col-lg-8 mx-auto">
+              <p class="lead"><b>${edu2_school}</b> (${edu2_qualification}, ${edu2_year})</p>
+              <p class="mt-0">${edu2_desc}</p>
+        </div>
+        
         <div class="col-lg-8 mx-auto bg-light">
               <h3><b>Skills</b></h3>
         </div>
@@ -81,19 +94,6 @@ module.exports = ({ name, email, phone, linkedin, github, skills, exp1_org, exp1
         <div class="col-lg-8 mx-auto">
               <p class="lead"><b>${proj2_title}</b> (${proj2_link})</p>
               <p class="mt-0">${proj2_desc}</p>
-        </div>
-
-
-        <div class="col-lg-8 mx-auto bg-light">
-              <h3><b>Education</b></h3>
-        </div>
-        <div class="col-lg-8 mx-auto">
-              <p class="lead"><b>${edu1_school}</b> (${edu1_qualification}, ${edu1_year})</p>
-              <p class="mt-0">${edu1_desc}</p>
-        </div>
-        <div class="col-lg-8 mx-auto">
-              <p class="lead"><b>${edu2_school}</b> (${edu2_qualification}, ${edu2_year})</p>
-              <p class="mt-0">${edu2_desc}</p>
         </div>
 
         <div class="col-lg-8 mx-auto bg-light">
